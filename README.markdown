@@ -73,6 +73,13 @@ The git-wip command can be invoked in several differnet ways.
 To use git-wip effectively, you should tie it into your editor so you
 don't have to remember to run git-wip manually.
 
+To add git-wip support to emacs add the following to your `.emacs`. Doing
+so will make it be invoked after every `save-buffer` operation.
+
+    (load "/{path_to_git-wip}/emacs/git-wip.el")
+
+Or you may also copy the content of git-wip.el in your `.emacs`.
+
 To add git-wip support to vim add the following to your `.vimrc`.  Doing
 so will make it be invoked after every `:w` operation.
 
